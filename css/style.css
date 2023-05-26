@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Mono:ital,wght@0,300;0,500;1,400;1,500&display=swap');
+
 *,*:before,*:after {
     margin: 0;
     padding: 0;
@@ -38,4 +40,36 @@ body{
 .nav {
     width: 150px;
     text-align: center;
+}
+
+img.schema {
+    width: 75%;
+    padding-top: 40px;
+    box-shadow: 1px 1px 9px 2px rgb(0 0 0 / 66%);
+    margin-top: 80px;
+}
+
+#code{
+    width: 75%;
+    padding: 20px;
+    box-shadow: 1px 1px 9px 2px rgb(0 0 0 / 66%);
+    margin-top: 80px;
+    font-family: 'Red Hat Mono', monospace;
+    font-weight: 300;
+    color: #00FFD0;
+}
+
+.symbol{
+    color: #ff8b92;
+}
+.reserved{
+    color: #5effff;
+}
+
+.word{
+    color: #d04279;
+}
+
+.definition{
+    color: #ffee00;
 }

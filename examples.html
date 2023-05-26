@@ -1,35 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>web socket browser client</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <div class="main">
-        <div class="top-bar">
-            <div class="col"></div>
-            <div class="nav" >
-                <a href="https://ceduardorubio.github.io/websocketbrowserclient/">Home</a>
+<html>
+	<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>web socket browser client</title>
+        <link rel="stylesheet" href="css/style.css">
+		<link
+			rel="stylesheet"
+			data-name="vs/editor/editor.main"
+			href="../node_modules/monaco-editor/min/vs/editor/editor.main.css"
+		/>
+	</head>
+	<body>
+        <div class="main">
+            <div class="top-bar">
+                <div class="col"></div>
+                <div class="nav" >
+                    <a href="https://ceduardorubio.github.io/websocketbrowserclient/">Home</a>
+                </div>
+                <div class="nav" >
+                    <a href="https://ceduardorubio.github.io/websocketbrowserclient/docs.html">Documentation</a>
+                </div>
+                <div class="nav" >
+                    <a href="https://ceduardorubio.github.io/websocketbrowserclient/examples.html">Examples</a>
+                </div>
+                <div class="nav">
+                    <a href="https://github.com/ceduardorubio/websocket-browser-client" style="display: flex;gap:10px">
+                        <img src="/img/github.svg" style="width: 19px;">
+                        GITHUB
+                    </a>
+                </div>
             </div>
-            <div class="nav" >
-                <a href="https://ceduardorubio.github.io/websocketbrowserclient/docs.html">Documentation</a>
-            </div>
-            <div class="nav" >
-                <a href="https://ceduardorubio.github.io/websocketbrowserclient/examples.html">Examples</a>
-            </div>
-            <div class="nav">
-                <a href="https://github.com/ceduardorubio/websocket-browser-client" style="display: flex;gap:10px">
-                    <img src="/img/github.svg" style="width: 19px;">
-                    GITHUB
-                </a>
-            </div>
+            <h1 style="padding-top: 100px;">Websocket Browser Client Examples</h1>
+            <div id="container" style="width: 800px; height: 800px; border: 1px solid grey"></div>
+    
         </div>
-        <h1 style="padding-top: 100px;">Websocket Browser Client Examples</h1>
 
-    </div>
-</body>
+		<script>
+			var require = { paths: { vs: '../node_modules/monaco-editor/min/vs' } };
+		</script>
+		<script src="../node_modules/monaco-editor/min/vs/loader.js"></script>
+		<script src="../node_modules/monaco-editor/min/vs/editor/editor.main.nls.js"></script>
+		<script src="../node_modules/monaco-editor/min/vs/editor/editor.main.js"></script>
+
+		<script src="js/main.js">
+			
+		</script>
+	</body>
 </html>
