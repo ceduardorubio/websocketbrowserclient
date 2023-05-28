@@ -49,14 +49,13 @@ img.schema {
     margin-top: 80px;
 }
 
-#code{
-    width: 75%;
-    padding: 20px;
-    box-shadow: 1px 1px 9px 2px rgb(0 0 0 / 66%);
-    margin-top: 80px;
+#container{
+    width      : 75%;
+    box-shadow : 1px 1px 9px 2px rgb(0 0 0 / 66%);
     font-family: 'Red Hat Mono', monospace;
-    font-weight: 300;
-    color: #00FFD0;
+    color      : #00FFD0;
+    height     : 800px;
+    border     : 1px solid grey;
 }
 
 .symbol{
