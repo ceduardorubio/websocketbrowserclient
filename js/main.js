@@ -1,5 +1,5 @@
 let code = `
-import { WebSocketBrowserClient } from "ws-browser-client";
+import { WebSocketBrowserClient } from "./ws-browser-client";
 
 let options = null;
 /*  default values
@@ -50,13 +50,6 @@ wsClient.connectTo('ws://localhost:8080',authCredentials);
 `;
 
 
-
-var editor = monaco.editor.create(document.getElementById('container'), {
-    value:code,
-    language: 'typescript',
-    theme: 'vs-dark',
-    minimap: {
-        enabled: false
-    },
-    readOnly: true,
-});
+setTimeout(() => {
+    window.VSCODE_TS(code,"container");
+}, 300);

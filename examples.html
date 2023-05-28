@@ -7,11 +7,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>web socket browser client</title>
         <link rel="stylesheet" href="css/style.css">
-		<link
-			rel="stylesheet"
-			data-name="vs/editor/editor.main"
-			href="https://ceduardorubio.github.io/websocketbrowserclient/node_modules/monaco-editor/min/vs/editor/editor.main.css"
-		/>
+		<link rel="stylesheet" href="css/index.css" />
+
 	</head>
 	<body>
         <div class="main">
@@ -38,14 +35,9 @@
     
         </div>
 
-		<script>
-			var require = { paths: { vs: 'https://ceduardorubio.github.io/websocketbrowserclient/node_modules/monaco-editor/min/vs' } };
-		</script>
-		<script src="https://ceduardorubio.github.io/websocketbrowserclient/node_modules/monaco-editor/min/vs/loader.js"></script>
-		<script src="https://ceduardorubio.github.io/websocketbrowserclient/node_modules/monaco-editor/min/vs/editor/editor.main.nls.js"></script>
-		<script src="https://ceduardorubio.github.io/websocketbrowserclient/node_modules/monaco-editor/min/vs/editor/editor.main.js"></script>
+		<script type="module" src="js/vscode.js"></script>
 
-		<script src="https://ceduardorubio.github.io/websocketbrowserclient/js/main.js">
+		<script src="js/main.js">
 			
 		</script>
 	</body>
