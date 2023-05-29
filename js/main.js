@@ -68,5 +68,21 @@ let conditionCheck = () => {
 }
 
 tryTill(conditionCheck,() => {
-    window.VSCODE_TS(code,"container");
+    window.VSCODE_TS(code,"code");
+});
+
+
+function request (url,cb){
+    fetch(url).then((response) => {
+        return response.json();
+    }
+    ).then((json) => {
+        cb(json);
+    });
+}
+
+request('https://api.npmjs.org/downloads/point/2023-04-1:2023-12-29/ws-browser-client',(json) => {
+    console.log(json)    
+document.getElementById('downloads').innerHTML = "(" + json.downloads + ")";
+
 });
